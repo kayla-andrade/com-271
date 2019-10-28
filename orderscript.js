@@ -1,7 +1,7 @@
 var unpopped = document.forms["popcorn"] ["unpopped"];
 var caramel = document.forms["popcorn"] ["caramel"];
 var caramelNut = document.forms["popcorn"] ["caramelNut"];
-var taffey = document.forms["popcorn"] ["taffey"];
+var toffey = document.forms["popcorn"] ["toffey"];
 var subtotal = 0.0;
 var Tax_Rate = 0.07;
 function updateSubtotal() {
@@ -9,7 +9,7 @@ function updateSubtotal() {
   subtotal += unpopped.value*3;
   subtotal += caramel.value*3.50;
   subtotal += caramelNut.value*4.50;
-  subtotal += taffey.value*5.00;
+  subtotal += toffey.value*5.00;
   var subtotalBox = document.getElementById("subtotal");
   subtotalBox.value = "$" + subtotal;
 }
