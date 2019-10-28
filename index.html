@@ -20,12 +20,24 @@
     
     <tr>
       <td>Unpopped Popcorn (1 lb.)</td>
-      <td>$3.50</td>
+      <td>$3.00</td>
       <td><input type="number" name="unpopped" min="0" max="9"></td>
     </tr> 
     
     <tr>
+      <td>Caramel Popcorn (2 lb. canister)</td>
+      <td>$3.50</td>
+      <td><input type="number" name="caramel" min="0" max="9"></td>
+    </tr> 
+    
+    <tr>
       <td>Caramel Nut Popcorn (2 lb. canister)</td>
+      <td>$3.50</td>
+      <td><input type="number" name="caramelNut" min="0" max="9"></td>
+    </tr> 
+    
+    <tr>
+      <td>Toffey Nut Popcorn (2 lb. canister)</td>
       <td>$3.50</td>
       <td><input type="number" name="toffey" min="0" max="9"></td>
     </tr> 
@@ -37,3 +49,28 @@
     </tr>
     
   </table>
+  
+  <h2>Payment Method</h2>
+  <h3>Grand Total:<input id="grand-total" type="text" name="Grand Total" readonly></h3>
+  
+  Visa: <input type="radio" name="paymentMethod" value="visa" onclick="getGrandTotal( )">
+  
+  Mastercard: <input type="radio" name="paymentMethod" value="mastercard" onclick="getGrandTotal( )">
+  
+  Discover: <input type="radio" name="paymentMethod" value="discover" onclick="getGrandTotal( )">
+  
+  American Express: <input type="radio" name="paymentMethod" value="amex" onclick="getGrandTotal( )">
+  
+  Check: <input type="radio" name="paymentMethod" value="check" onclick="getGrandTotal( )">
+  <br>
+  <br>
+  <br> 
+  <input type="submit" value="submit"><input type="reset" value="clear form">
+  </form>
+</fieldset>
+
+<script src="orderScript.js"></script>
+</body>
+</html> 
+
+  
