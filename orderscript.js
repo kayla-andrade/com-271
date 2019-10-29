@@ -17,7 +17,7 @@ function getGrandTotal()
 {
   var grandTotal = document.getElementById("grandtotal");
   var payment = document.querySelector('input[name="paymentMethod"]:checked');
-  var fee = (payment && payment.value ==="check" ? 2.50 : 0.00);
+  var fee = (payment && payment.value === "check" ? 2.50 : 0.00);
   grandTotal.value = "$" + (subtotal + subtotal*Tax Rate + fee);
 }
 fucntion popcornconfirm() {
